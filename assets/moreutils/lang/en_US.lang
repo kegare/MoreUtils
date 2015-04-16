@@ -1,0 +1,14 @@
+# Localization file : en_US
+
+item.potionHolder.name=Potion Holder
+item.torchHolder.name=Torch Holder
+item.torchHolder.rest=Rest of torches
+item.torchHolder.iron.name=Iron Torch Holder
+item.torchHolder.gold.name=Golden Torch Holder
+item.torchHolder.diamond.name=Diamond Torch Holder
+item.arrowHolder.name=Arrow Holder
+item.arrowHolder.rest=Rest of arrows
+item.arrowHolder.iron.name=Iron Arrow Holder
+item.arrowHolder.gold.name=Golden Arrow Holder
+item.arrowHolder.diamond.name=Diamond Arrow Holder
+item.spanner.name=Spanner

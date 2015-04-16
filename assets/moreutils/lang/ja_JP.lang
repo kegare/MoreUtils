@@ -1,0 +1,14 @@
+# Localization file : ja_JP
+
+item.potionHolder.name=ポーション入れ
+item.torchHolder.name=松明入れ
+item.torchHolder.rest=松明の残り
+item.torchHolder.iron.name=鉄の松明入れ
+item.torchHolder.gold.name=金の松明入れ
+item.torchHolder.diamond.name=ダイヤの松明入れ
+item.arrowHolder.name=矢筒
+item.arrowHolder.rest=矢の残り
+item.arrowHolder.iron.name=鉄の矢筒
+item.arrowHolder.gold.name=金の矢筒
+item.arrowHolder.diamond.name=ダイヤの矢筒
+item.spanner.name=スパナ
