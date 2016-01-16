@@ -10,8 +10,8 @@ import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
-import net.minecraftforge.event.entity.player.ArrowLooseEvent;
 import net.minecraftforge.event.entity.player.ArrowNockEvent;
+import net.minecraftforge.event.entity.player.PlayerUseItemEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 public class MoreEventHooks
@@ -19,15 +19,16 @@ public class MoreEventHooks
 	protected static final Random eventRand = new Random();
 
 	@SubscribeEvent
-	public void onArrowLoose(ArrowLooseEvent event)
+	public void onArrowLoose(PlayerUseItemEvent.Stop event)
 	{
 		EntityPlayer player = event.entityPlayer;
-		ItemStack bow = event.bow;
+		ItemStack bow = event.item;
 
 		if (bow != null && bow.getItem() == Items.bow && ItemArrowHolder.hasArrowHolder(player.inventory))
 		{
 			World world = player.worldObj;
-			float f = event.charge / 20.0F;
+			int charge = bow.getMaxItemUseDuration() - event.duration;
+			float f = charge / 20.0F;
 			f = (f * f + f * 2.0F) / 3.0F;
 
 			if (f < 0.1D)
